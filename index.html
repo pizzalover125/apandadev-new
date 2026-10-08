@@ -1,0 +1,1640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>apanda</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+    <meta
+      name="theme-color"
+      content="#fafaf9"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#0a0a0a"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #fafaf9;
+        --fg: #0a0a0a;
+        --muted: #8a8a87;
+        --in: #e9e9eb;
+        --out: #0a84ff;
+        --field: #fff;
+        --edge: #dcdcd8;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #0a0a0a;
+          --fg: #f5f5f4;
+          --muted: #71716e;
+          --in: #262628;
+          --field: #161617;
+          --edge: #2c2c2e;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #0a0a0a;
+        --fg: #f5f5f4;
+        --muted: #71716e;
+        --in: #262628;
+        --field: #161617;
+        --edge: #2c2c2e;
+      }
+      * {
+        margin: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        min-height: 100%;
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font:
+          400 clamp(17px, 2vw, 19px) / 1.4 Figtree,
+          system-ui,
+          sans-serif;
+        letter-spacing: -0.005em;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: calc(56px + env(safe-area-inset-top))
+          max(16px, env(safe-area-inset-right))
+          calc(56px + env(safe-area-inset-bottom))
+          max(16px, env(safe-area-inset-left));
+        transition:
+          background 0.4s,
+          color 0.4s;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        width: 100%;
+        max-width: 540px;
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        position: relative;
+      }
+
+      /* Bubbles */
+      .b {
+        max-width: 85%;
+        padding: 9px 14px;
+        border-radius: 20px;
+        word-wrap: break-word;
+        width: fit-content;
+        opacity: 0;
+        transform: translateY(8px) scale(0.96);
+        transform-origin: bottom left;
+        transition:
+          opacity 0.35s,
+          transform 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+      }
+      .b.in:not(.show) {
+        visibility: hidden;
+      }
+      /* Typing dots sit where the next (still hidden) bubble will appear */
+      .b.in.ghost {
+        position: absolute;
+        visibility: visible;
+        margin: 0;
+      }
+      .b.on {
+        opacity: 1;
+        transform: none;
+      }
+      .in {
+        position: relative;
+        background: var(--in);
+        color: var(--fg);
+        align-self: flex-start;
+        border-bottom-left-radius: 6px;
+      }
+      .in + .in {
+        border-top-left-radius: 6px;
+      }
+      .in.last {
+        border-bottom-left-radius: 20px;
+      }
+      .muted {
+        opacity: 0.55;
+      }
+      .in a {
+        color: inherit;
+        text-decoration: underline;
+        text-decoration-color: color-mix(
+          in srgb,
+          currentColor 35%,
+          transparent
+        );
+        text-underline-offset: 3px;
+        text-decoration-thickness: 1px;
+        transition: text-decoration-color 0.2s;
+      }
+      .in a:hover,
+      .in a:focus-visible {
+        text-decoration-color: currentColor;
+        outline: none;
+      }
+      /* Small logo after a link, sized to the text */
+      /* Keep a logo on the same line as its word */
+      .in a:has(.ico) {
+        white-space: nowrap;
+      }
+      .ico {
+        display: inline-block;
+        width: 1.1em;
+        height: 1.1em;
+        margin-left: 0.25em;
+        vertical-align: -0.2em;
+        border-radius: 0.25em;
+        object-fit: contain;
+      }
+      /* Wordmark logos (no square icon available) */
+      .ico.wide {
+        width: auto;
+        height: 1.4em;
+        vertical-align: -0.35em;
+        border-radius: 0;
+      }
+      .wave {
+        display: inline-block;
+        transform-origin: 70% 70%;
+      }
+      .on .wave {
+        animation: wave 2s 0.3s ease-in-out 1;
+      }
+      @keyframes wave {
+        0%,
+        60%,
+        100% {
+          transform: rotate(0);
+        }
+        10%,
+        30% {
+          transform: rotate(14deg);
+        }
+        20%,
+        40% {
+          transform: rotate(-8deg);
+        }
+        50% {
+          transform: rotate(10deg);
+        }
+      }
+
+      /* Link-preview bubble */
+      .lpb {
+        padding: 0;
+        overflow: hidden;
+        width: 85%;
+      }
+      .in a.lp {
+        display: block;
+        padding: 10px 14px 11px;
+        text-decoration: none;
+      }
+      .lp-k,
+      .lp-d {
+        display: block;
+        font-size: 12px;
+        color: var(--muted);
+      }
+      .lp-t {
+        display: block;
+        font-weight: 500;
+        margin: 3px 0 2px;
+        line-height: 1.3;
+      }
+
+      /* Typing indicator */
+      .typing {
+        display: flex;
+        gap: 4px;
+        padding: 13px 14px;
+      }
+      .typing i {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--muted);
+        animation: dot 1.2s infinite;
+      }
+      .typing i:nth-child(2) {
+        animation-delay: 0.15s;
+      }
+      .typing i:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      @keyframes dot {
+        0%,
+        60%,
+        100% {
+          opacity: 0.35;
+          transform: none;
+        }
+        30% {
+          opacity: 1;
+          transform: translateY(-2px);
+        }
+      }
+
+      /* Contact header, like the top of an iMessage thread */
+      .head {
+        all: unset;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        cursor: pointer;
+        margin-bottom: 22px;
+        border-radius: 14px;
+        padding: 4px 10px;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .head:focus-visible {
+        outline: 2px solid var(--out);
+        outline-offset: 2px;
+      }
+      .av {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 32px;
+        line-height: 1;
+        /* Light blue, like Apple's contact avatars */
+        background: linear-gradient(180deg, #b8e0ff, #6cb6f5);
+      }
+      .av.big {
+        width: 96px;
+        height: 96px;
+        font-size: 56px;
+        margin: 0 auto;
+      }
+      .head .nm {
+        font-size: 13px;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+      }
+      .head svg {
+        width: 12px;
+        height: 12px;
+        color: var(--muted);
+      }
+
+      /* Link previews in AI replies, like iMessage's rich links */
+      .b.lp {
+        display: block;
+        width: 270px;
+        max-width: 78%;
+        padding: 0;
+        overflow: hidden;
+        border-radius: 18px;
+        text-decoration: none;
+        color: var(--fg);
+        white-space: normal;
+      }
+      .b.lp:hover {
+        filter: brightness(0.97);
+      }
+      .lp-img {
+        aspect-ratio: 1.91 / 1;
+        background: var(--edge);
+        overflow: hidden;
+      }
+      .lp-img img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+      .lp-img img.on {
+        opacity: 1;
+      }
+      .lp.loading .lp-img {
+        animation: lpShimmer 1.2s ease-in-out infinite;
+      }
+      @keyframes lpShimmer {
+        50% {
+          opacity: 0.55;
+        }
+      }
+      .lp-foot {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 12px 10px;
+      }
+      .lp-txt {
+        flex: 1;
+        min-width: 0;
+      }
+      .lp-txt b {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.25;
+      }
+      .lp-txt span {
+        display: block;
+        color: var(--muted);
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .lp-icon {
+        width: 36px;
+        height: 36px;
+        border-radius: 8px;
+        flex: none;
+        object-fit: cover;
+        background: var(--bg);
+      }
+      .lp-icon.globe {
+        display: grid;
+        place-items: center;
+        color: var(--muted);
+      }
+      .lp-icon.globe svg {
+        width: 20px;
+        height: 20px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .lp.loading .lp-img {
+          animation: none;
+        }
+      }
+
+      /* Read receipt */
+      .read {
+        align-self: flex-start;
+        font-size: 12px;
+        color: var(--muted);
+        margin: 4px 0 0 6px;
+        min-height: 16px;
+        opacity: 0;
+        transition: opacity 0.5s;
+      }
+      .read.on {
+        opacity: 1;
+      }
+      @keyframes up {
+        from {
+          opacity: 0;
+          transform: translateY(8px);
+        }
+      }
+
+      /* Contact card */
+      dialog {
+        margin: auto;
+        border: 0;
+        padding: 28px 22px 22px;
+        border-radius: 22px;
+        width: min(340px, calc(100vw - 32px));
+        background: var(--field);
+        color: var(--fg);
+        text-align: center;
+        box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+      }
+      dialog::backdrop {
+        background: rgba(0, 0, 0, 0.45);
+        backdrop-filter: blur(6px);
+      }
+      dialog[open] {
+        animation: up 0.3s cubic-bezier(0.2, 0.9, 0.3, 1);
+      }
+      dialog h2 {
+        font-weight: 500;
+        font-size: 22px;
+        margin-top: 12px;
+      }
+      dialog p {
+        font-size: 14px;
+        color: var(--muted);
+        margin-top: 8px;
+      }
+      .acts {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 6px;
+        margin-top: 20px;
+      }
+      .acts a {
+        all: unset;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+        padding: 10px 0;
+        border-radius: 14px;
+        background: var(--in);
+        font-size: 11px;
+        color: var(--fg);
+        transition: filter 0.15s;
+      }
+      .acts a:hover {
+        filter: brightness(0.95);
+      }
+      .acts svg {
+        width: 20px;
+        height: 20px;
+        color: var(--out);
+      }
+      .x {
+        all: unset;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+        width: 32px;
+        height: 32px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+        cursor: pointer;
+        color: var(--muted);
+        font-size: 20px;
+      }
+
+      /* Link preview: a small card that opens to the upper right of the tapped link */
+      #pop {
+        position: absolute;
+        z-index: 20;
+        width: 260px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: color-mix(in srgb, var(--field) 88%, transparent);
+        -webkit-backdrop-filter: blur(24px) saturate(1.8);
+        backdrop-filter: blur(24px) saturate(1.8);
+        box-shadow:
+          0 0 0 0.5px color-mix(in srgb, var(--fg) 14%, transparent),
+          0 12px 36px rgba(0, 0, 0, 0.18);
+        transform-origin: bottom left;
+        animation: popIn 0.28s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+      }
+      #pop.below {
+        transform-origin: top left;
+      }
+      #pop[hidden] {
+        display: none;
+      }
+      @keyframes popIn {
+        from {
+          opacity: 0;
+          transform: scale(0.85);
+        }
+      }
+      .pop-img {
+        aspect-ratio: 16 / 9;
+        background: var(--in);
+      }
+      .pop-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      .pop-body {
+        padding: 10px 12px 12px;
+      }
+      #popT {
+        display: block;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 1.3;
+      }
+      #popD {
+        font-size: 13px;
+        line-height: 1.35;
+        color: var(--muted);
+        margin-top: 2px;
+      }
+      #popGo {
+        display: inline-block;
+        margin-top: 8px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--out);
+        text-decoration: none;
+      }
+      #popGo:hover {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+      }
+      /* Loading skeleton: gray blocks that shimmer until the content is in */
+      .sk {
+        display: none;
+      }
+      #pop.loading .sk {
+        display: block;
+      }
+      #pop.loading .pop-real {
+        display: none;
+      }
+      #pop:not(.loading) .pop-real {
+        animation: fadeIn 0.3s ease;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+      }
+      .sk i,
+      #pop.loading .pop-img {
+        background: linear-gradient(
+            90deg,
+            transparent,
+            color-mix(in srgb, var(--field) 55%, transparent),
+            transparent
+          )
+          var(--in);
+        background-size: 200% 100%;
+        animation: shimmer 1.2s linear infinite;
+      }
+      .sk i {
+        display: block;
+        height: 11px;
+        border-radius: 6px;
+        margin-top: 7px;
+      }
+      .sk i:first-child {
+        height: 14px;
+        width: 60%;
+        margin-top: 2px;
+      }
+      .sk i:nth-child(3) {
+        width: 80%;
+      }
+      .sk i:last-child {
+        width: 40%;
+        margin-top: 12px;
+      }
+      @keyframes shimmer {
+        from {
+          background-position: 200% 0;
+        }
+        to {
+          background-position: -200% 0;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        #pop,
+        .pop-real,
+        .sk i,
+        #pop.loading .pop-img {
+          animation: none !important;
+        }
+      }
+
+      /* Outgoing bubbles (visitor's texts) */
+      .out {
+        background: var(--out);
+        color: #fff;
+        align-self: flex-end;
+        transform-origin: bottom right;
+        border-bottom-right-radius: 6px;
+        margin-top: 14px;
+        white-space: pre-wrap;
+      }
+      .out + .out {
+        margin-top: 0;
+        border-top-right-radius: 6px;
+      }
+      .out.last {
+        border-bottom-right-radius: 20px;
+      }
+      .out + .in {
+        margin-top: 14px;
+      }
+      .meta {
+        align-self: flex-end;
+        font-size: 12px;
+        color: var(--muted);
+        margin: 3px 6px 0 0;
+      }
+      .meta.err {
+        color: #ff3b30;
+      }
+      .meta button {
+        all: unset;
+        cursor: pointer;
+        font-weight: 500;
+        margin-left: 4px;
+        color: var(--out);
+      }
+
+      /* Composer, like the iMessage text field */
+      #f {
+        position: sticky;
+        bottom: 0;
+        margin: 18px -16px 0;
+        padding: 8px 16px calc(10px + env(safe-area-inset-bottom));
+        background: color-mix(in srgb, var(--bg) 86%, transparent);
+        -webkit-backdrop-filter: blur(20px) saturate(1.8);
+        backdrop-filter: blur(20px) saturate(1.8);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s, visibility 0.4s;
+      }
+      #f.on {
+        opacity: 1;
+        visibility: visible;
+      }
+      .bar {
+        display: flex;
+        align-items: flex-end;
+        gap: 6px;
+        border: 1px solid var(--edge);
+        border-radius: 20px;
+        padding: 3px 3px 3px 14px;
+        background: var(--field);
+        transition: border-color 0.2s;
+      }
+      .bar:focus-within {
+        border-color: color-mix(in srgb, var(--muted) 60%, var(--edge));
+      }
+      #msg {
+        flex: 1;
+        min-width: 0;
+        font: inherit;
+        font-size: 16px;
+        line-height: 1.35;
+        color: var(--fg);
+        background: none;
+        border: 0;
+        outline: none;
+        resize: none;
+        padding: 5px 0;
+        max-height: 140px;
+      }
+      #msg::placeholder {
+        color: var(--muted);
+      }
+      .send {
+        flex: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 0;
+        padding: 0;
+        background: var(--out);
+        color: #fff;
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        transition: opacity 0.2s, transform 0.15s;
+      }
+      .send:disabled {
+        opacity: 0;
+        transform: scale(0.6);
+        cursor: default;
+      }
+      .send:not(:disabled):active {
+        transform: scale(0.9);
+      }
+      .send svg {
+        width: 16px;
+        height: 16px;
+      }
+      .note {
+        font-size: 11px;
+        color: var(--muted);
+        text-align: center;
+        margin-top: 6px;
+      }
+
+      /* + button for iMessage apps, left of the text field */
+      .compose {
+        display: flex;
+        align-items: flex-end;
+        gap: 8px;
+      }
+      .compose .bar {
+        flex: 1;
+        min-width: 0;
+      }
+      .plus {
+        flex: none;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 1px;
+        border: 0;
+        padding: 0;
+        border-radius: 50%;
+        background: color-mix(in srgb, var(--out) 14%, transparent);
+        color: var(--out);
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.3, 1.3), background 0.2s;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .plus:hover {
+        background: color-mix(in srgb, var(--out) 22%, transparent);
+      }
+      .plus:active {
+        transform: scale(0.9);
+      }
+      .plus.open {
+        transform: rotate(45deg);
+      }
+      .plus:focus-visible {
+        outline: 2px solid var(--out);
+        outline-offset: 2px;
+      }
+      .plus svg {
+        width: 18px;
+        height: 18px;
+      }
+
+      @media (max-width: 520px) {
+        body {
+          font-size: 17px;
+        }
+        main {
+          max-width: none;
+        }
+        .b {
+          max-width: 82%;
+          padding: 8px 13px;
+          border-radius: 19px;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .b,
+        #f {
+          transition: none;
+        }
+        .on .wave,
+        .typing i {
+          animation: none;
+        }
+      }
+    </style>
+    <noscript
+      ><style>
+        .b.in {
+          visibility: visible !important;
+          opacity: 1 !important;
+          transform: none !important;
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <main id="chat" aria-live="polite">
+      <button
+        class="head"
+        id="head"
+        type="button"
+        aria-label="Open contact card"
+      >
+        <span class="av" aria-hidden="true">🐼</span>
+        <span class="nm"
+          >adi<svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M9 6l6 6-6 6" /></svg
+        ></span>
+      </button>
+
+      <div class="b in">
+        hey! i'm aaradhya panda <span class="wave">👋</span> 🐼
+      </div>
+      <div class="b in">you can call me adi</div>
+      <div class="b in">
+        i craft experiences; software, hardware, and events
+      </div>
+      <div class="b in">i like debating, coding, and making</div>
+      <div class="b in">
+        i run
+        <a
+          href="https://codehatch.org"
+          data-pop="hatch"
+          target="_blank"
+          rel="noopener"
+          >the code hatch<img
+            class="ico"
+            src="https://codehatch.org/logo.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="b in">
+        i help with events @
+        <a
+          href="https://hackclub.com"
+          data-pop="hackclub"
+          target="_blank"
+          rel="noopener"
+          >hack club<img
+            class="ico"
+            src="https://assets.hackclub.com/icon-rounded.svg"
+            alt=""
+        /></a>
+      </div>
+      <div class="b in">
+        i help seniors with tech @
+        <a
+          href="https://cyberseniors.org"
+          data-pop="cyberseniors"
+          target="_blank"
+          rel="noopener"
+          >cyberseniors<img
+            class="ico wide"
+            src="https://cyberseniors.org/wp-content/uploads/2026/08/CyberSeniors_Logo_TM-clear-bkgnd.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="b in">
+        check out my
+        <a
+          href="https://github.com/pizzalover125"
+          target="_blank"
+          rel="noopener"
+          >github<svg
+            class="ico"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path
+              d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .5z"
+            /></svg
+        ></a>
+        and
+        <a
+          href="https://www.linkedin.com/in/aaradhyapanda"
+          target="_blank"
+          rel="noopener"
+          >linkedin<svg
+            class="ico"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <!-- LinkedIn logo from Bootstrap Icons (MIT), white behind the cut-out "in" -->
+            <rect x="1.5" y="1.5" width="13" height="13" fill="#fff" />
+            <path
+              fill="#0a66c2"
+              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"
+            /></svg
+        ></a>
+      </div>
+      <div class="b in last">
+        email me at <a href="mailto:adi@apanda.dev">adi@apanda.dev</a>
+      </div>
+      <div class="read" id="read" aria-hidden="true"></div>
+      <div id="log" style="display: contents"></div>
+      <form id="f" novalidate>
+        <div class="compose">
+          <button class="plus" id="plus" type="button" aria-label="Apps">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round">
+              <path d="M12 5v14M5 12h14" />
+            </svg>
+          </button>
+          <div class="bar">
+            <textarea
+              id="msg"
+              rows="1"
+              placeholder="iMessage"
+              maxlength="500"
+              aria-label="Message"
+              enterkeyhint="send"
+            ></textarea>
+            <button class="send" id="send" type="submit" aria-label="Send" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5.5 11.5L12 5l6.5 6.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <p class="note">replies come from an AI version of adi · for the real me, email adi@apanda.dev</p>
+      </form>
+    </main>
+
+    <dialog id="card" aria-label="Contact card">
+      <button class="x" type="button" aria-label="Close" data-close>
+        &times;
+      </button>
+      <span class="av big" aria-hidden="true">🐼</span>
+      <h2>Aaradhya Panda</h2>
+      <p>founder, builder, maker, debater</p>
+      <div class="acts">
+        <a href="mailto:adi@apanda.dev"
+          ><svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M2 6.5A2.5 2.5 0 014.5 4h15A2.5 2.5 0 0122 6.5v.3l-10 6.1L2 6.8v-.3zM2 9.2v8.3A2.5 2.5 0 004.5 20h15a2.5 2.5 0 002.5-2.5V9.2l-10 6.1-10-6.1z"
+            /></svg
+          >email</a
+        >
+        <a
+          href="https://www.linkedin.com/in/aaradhyapanda"
+          target="_blank"
+          rel="noopener"
+          ><svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.1c0-1.22-.02-2.79-1.7-2.79-1.7 0-1.96 1.33-1.96 2.7V21h-4z"
+            /></svg
+          >linkedin</a
+        >
+        <a
+          href="https://github.com/pizzalover125"
+          target="_blank"
+          rel="noopener"
+          ><svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .5a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.3 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .5z"
+            /></svg
+          >github</a
+        >
+      </div>
+    </dialog>
+
+    <div id="pop" role="dialog" aria-labelledby="popT" hidden>
+      <div class="pop-img" id="popImg"></div>
+      <div class="pop-body">
+        <div class="sk" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+        <div class="pop-real">
+          <span id="popT"></span>
+          <p id="popD"></p>
+          <a id="popGo" target="_blank" rel="noopener"></a>
+        </div>
+      </div>
+    </div>
+
+    <script src="gamepanda.js"></script>
+    <script src="apps.js"></script>
+    <script>
+      (function () {
+        var chat = document.getElementById("chat"),
+          card = document.getElementById("card"),
+          bubbles = [].slice.call(chat.querySelectorAll(".b.in")),
+          still = matchMedia("(prefers-reduced-motion: reduce)").matches,
+          fmt = new Intl.DateTimeFormat("en-US", {
+            hour: "numeric",
+            minute: "2-digit",
+          });
+
+        // How long the typing dots show before a message: a little longer for longer texts,
+        // with a touch of randomness so the rhythm doesn't feel mechanical.
+        function typeTime(text) {
+          if (still) return 0;
+          var len = String(text || "").replace(/\s+/g, " ").trim().length;
+          return Math.round(Math.min(550 + len * 16, 1500) * (0.92 + Math.random() * 0.16));
+        }
+
+        // Contact card
+        document.getElementById("head").onclick = function () {
+          card.showModal();
+        };
+        card.addEventListener("click", function (e) {
+          if (e.target === card || e.target.closest("[data-close]"))
+            card.close();
+        });
+
+        // Link popups: placeholder content, fill in image/title/text/url per link
+        var POPS = {
+          hatch: {
+            title: "the code hatch",
+            text: "we run hackathons in AZ. 200+ students, 30+ schools, 50+ projects, 2.4k of hands-on activities, $6.4k raised.",
+            img: "https://cdn.hackclub.com/019f2f84-6768-7bdd-840b-814aac58e7fa/dsc06485.jpg",
+            url: "https://codehatch.org",
+            cta: "visit the code hatch",
+          },
+          hackclub: {
+            title: "hack club",
+            text: "participated in several hackathons and programs. ran an android dev license grant program. reviewed + judged projects for NASA-backed Stardance Challenge. 1200+ projects from 73 countries totaling 7000 hours of student work. ",
+            img: "https://undercity.hackclub.com/finalpic.png",
+            url: "https://hackclub.com",
+            cta: "visit hack club",
+          },
+          cyberseniors: {
+            title: "cyberseniors",
+            text: "135+ hours of one-on-one tech help and tech webinars exploring topics.",
+            img: "https://cyberseniors.org/wp-content/uploads/2021/04/cyber-seniors-technology-support.jpeg",
+            url: "https://cyberseniors.org",
+            cta: "visit cyberseniors",
+          },
+        };
+        var pop = document.getElementById("pop"),
+          popImg = document.getElementById("popImg"),
+          popGo = document.getElementById("popGo"),
+          popFor = null,
+          popTimer;
+        function closePop() {
+          pop.hidden = true;
+          popFor = null;
+          clearTimeout(popTimer);
+        }
+        // Bottom-left corner of the card sits at the top-right of the link;
+        // flips below or slides left when it would leave the screen.
+        function placePop(a) {
+          var r = a.getBoundingClientRect(),
+            w = pop.offsetWidth,
+            h = pop.offsetHeight,
+            x = Math.min(r.right + 4, innerWidth - w - 12),
+            y = r.top - h - 6,
+            below = y < 8;
+          if (below) y = r.bottom + 6;
+          pop.classList.toggle("below", below);
+          pop.style.left = Math.max(12, x) + scrollX + "px";
+          pop.style.top = y + scrollY + "px";
+        }
+        function openPop(a, d) {
+          popFor = a;
+          clearTimeout(popTimer);
+          pop.classList.add("loading");
+          popImg.innerHTML = "";
+          document.getElementById("popT").textContent = d.title;
+          document.getElementById("popD").textContent = d.text;
+          popGo.textContent = d.cta + " \u2197";
+          popGo.href = d.url;
+          pop.hidden = false;
+          // Restart the open animation
+          pop.style.animation = "none";
+          pop.offsetWidth;
+          pop.style.animation = "";
+          placePop(a);
+          // Stay gray until the image (if any) has loaded, and at least briefly
+          var minWait = new Promise(function (res) {
+              popTimer = setTimeout(res, 450);
+            }),
+            imgReady = new Promise(function (res) {
+              if (!d.img) return res();
+              var img = new Image();
+              img.alt = "";
+              img.onload = img.onerror = function () {
+                popImg.appendChild(img);
+                res();
+              };
+              img.src = d.img;
+            });
+          Promise.all([minWait, imgReady]).then(function () {
+            if (popFor !== a) return;
+            pop.classList.remove("loading");
+            placePop(a);
+          });
+        }
+        chat.addEventListener("click", function (e) {
+          var a = e.target.closest("a[data-pop]");
+          if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+          var d = POPS[a.dataset.pop];
+          if (!d) return;
+          e.preventDefault();
+          if (popFor === a) return closePop();
+          openPop(a, d);
+        });
+        document.addEventListener("click", function (e) {
+          if (popFor && !e.target.closest("#pop, a[data-pop]")) closePop();
+        });
+        document.addEventListener("keydown", function (e) {
+          if (e.key === "Escape") closePop();
+        });
+        addEventListener("resize", function () {
+          if (popFor) placePop(popFor);
+        });
+
+        // Shrink-wrap bubbles that wrap onto several lines: CSS sizes them to the
+        // full available width, iMessage sizes them to their longest line.
+        function fit(b) {
+          b.style.width = "";
+          var r = document.createRange();
+          r.selectNodeContents(b);
+          var box = b.getBoundingClientRect(),
+            scale = box.width / b.offsetWidth || 1,
+            right = 0;
+          [].forEach.call(r.getClientRects(), function (c) {
+            right = Math.max(right, c.right);
+          });
+          var pad = parseFloat(getComputedStyle(b).paddingRight),
+            w = Math.ceil((right - box.left) / scale + pad + 1);
+          if (w < b.offsetWidth) b.style.width = w + "px";
+        }
+        function fitAll() {
+          bubbles.forEach(fit);
+        }
+        (document.fonts ? document.fonts.ready : Promise.resolve()).then(
+          fitAll,
+        );
+        addEventListener("resize", fitAll);
+        // Images (logos) change line widths once they load
+        [].forEach.call(chat.querySelectorAll(".b.in img"), function (img) {
+          if (!img.complete) img.addEventListener("load", fitAll);
+        });
+
+        // Texting back: the visitor's messages go to /api/chat (Hack Club AI on the
+        // server) and the reply types in as gray bubbles, one per line.
+        var form = document.getElementById("f"),
+          msg = document.getElementById("msg"),
+          send = document.getElementById("send"),
+          log = document.getElementById("log"),
+          thread = [],
+          busy = false;
+        // The composer is sticky, so scrolling it into view does not move the
+        // page once it is already pinned at the bottom. Scroll the document
+        // itself after new chat content has had a chance to affect its height.
+        function scrollEnd() {
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              window.scrollTo({
+                top: document.documentElement.scrollHeight,
+                behavior: still ? "auto" : "smooth",
+              });
+            });
+          });
+        }
+        // Links in AI replies: emails become mailto links, web links become tappable
+        // text plus an iMessage-style preview card. Known links get a real title and
+        // image; anything else gets a plain card with its domain.
+        var LI_ICON = "data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2016%2016%22%3E%3Crect%20width%3D%2216%22%20height%3D%2216%22%20rx%3D%223%22%20fill%3D%22%230a66c2%22/%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M4.943%2013.394V6.169H2.542v7.225zm-1.2-8.212c.837%200%201.358-.554%201.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4%203.226%202.4%203.934c0%20.694.521%201.248%201.327%201.248zm4.908%208.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878%201.232-.878.869%200%201.216.662%201.216%201.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274%200-1.845.7-2.165%201.193v.025h-.016l.016-.025V6.169h-2.4c.03.678%200%207.225%200%207.225z%22/%3E%3C/svg%3E";
+        var LINKS = {
+          "codehatch.org": { title: "the code hatch", img: POPS.hatch.img },
+          "hackclub.com": { title: "Hack Club", img: POPS.hackclub.img },
+          "cyberseniors.org": { title: "Cyber-Seniors", img: POPS.cyberseniors.img },
+          "github.com/pizzalover125": { title: "pizzalover125 (Aaradhya Panda)", icon: "https://github.com/pizzalover125.png" },
+          "linkedin.com/in/aaradhyapanda": { title: "Aaradhya Panda | LinkedIn", icon: LI_ICON },
+          "apanda.dev": { title: "adi", icon: null },
+        };
+        var LINK_RE =
+          /([\w.+-]+@[\w-]+(?:\.[\w-]+)+)|((?:https?:\/\/)?(?:www\.)?(?:[a-z0-9-]+\.)+(?:com|org|dev|io|net|app|co|edu|gov|me|ai|so|sh|xyz)(?:\/[^\s]*)?)/gi;
+        var GLOBE =
+          '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>';
+        // Splits text into [{text} | {text, href, web}] parts
+        function linkParts(text) {
+          var out = [],
+            last = 0,
+            m;
+          LINK_RE.lastIndex = 0;
+          while ((m = LINK_RE.exec(text))) {
+            var raw = m[0],
+              trail = raw.match(/[.,!?;:)\]"']+$/);
+            if (trail && m[2]) raw = raw.slice(0, -trail[0].length);
+            if (m.index > last) out.push({ text: text.slice(last, m.index) });
+            out.push(
+              m[1]
+                ? { text: raw, href: "mailto:" + raw }
+                : { text: raw, href: /^https?:/i.test(raw) ? raw : "https://" + raw, web: true },
+            );
+            last = m.index + raw.length;
+            LINK_RE.lastIndex = last;
+          }
+          if (last < text.length) out.push({ text: text.slice(last) });
+          return out;
+        }
+        function linkInfo(href) {
+          var u;
+          try {
+            u = new URL(href);
+          } catch (e) {
+            return null;
+          }
+          if (!/^https?:$/.test(u.protocol)) return null;
+          var host = u.hostname.replace(/^www\./, "").toLowerCase(),
+            path = u.pathname.replace(/\/+$/, "").toLowerCase();
+          return { href: u.href, host: host, known: LINKS[host + path] || LINKS[host] || null };
+        }
+        function linkCard(cls, href) {
+          var info = linkInfo(href);
+          if (!info) return null;
+          var k = info.known || {},
+            a = document.createElement("a");
+          a.className = "b lp " + cls + " show";
+          a.href = info.href;
+          a.target = "_blank";
+          a.rel = "noopener";
+          if (k.img) {
+            a.classList.add("loading");
+            var box = document.createElement("div"),
+              img = new Image();
+            box.className = "lp-img";
+            img.alt = "";
+            img.onload = function () {
+              img.classList.add("on");
+              a.classList.remove("loading");
+            };
+            img.onerror = function () {
+              box.remove();
+              a.classList.remove("loading");
+            };
+            img.src = k.img;
+            box.appendChild(img);
+            a.appendChild(box);
+          }
+          var foot = document.createElement("div"),
+            txt = document.createElement("div"),
+            t = document.createElement("b"),
+            d = document.createElement("span");
+          foot.className = "lp-foot";
+          txt.className = "lp-txt";
+          t.textContent = k.title || info.host;
+          // Unknown links: the domain is the title, so show the full link underneath
+          d.textContent = k.title ? info.host : info.href.replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, "");
+          txt.append(t, d);
+          foot.appendChild(txt);
+          if (!k.img) {
+            var icon;
+            if (k.icon) {
+              icon = new Image();
+              icon.alt = "";
+              icon.src = k.icon;
+            } else {
+              icon = document.createElement("span");
+              icon.classList.add("globe");
+              icon.innerHTML = k.icon === null ? "🐼" : GLOBE;
+            }
+            icon.classList.add("lp-icon");
+            foot.appendChild(icon);
+          }
+          a.appendChild(foot);
+          return a;
+        }
+
+        function bubble(cls, text) {
+          var b = document.createElement("div");
+          b.className = "b " + cls + " show";
+          linkParts(text).forEach(function (p) {
+            if (!p.href) return b.appendChild(document.createTextNode(p.text));
+            var a = document.createElement("a");
+            a.href = p.href;
+            a.textContent = p.text;
+            if (p.web) {
+              a.target = "_blank";
+              a.rel = "noopener";
+            }
+            b.appendChild(a);
+          });
+          log.appendChild(b);
+          requestAnimationFrame(function () {
+            b.classList.add("on");
+          });
+          fit(b);
+          return b;
+        }
+        function setMeta(text, err) {
+          var m = log.querySelector(".meta");
+          if (m) m.remove();
+          if (!text) return null;
+          m = document.createElement("div");
+          m.className = "meta" + (err ? " err" : "");
+          m.textContent = text;
+          var outs = log.querySelectorAll(".out");
+          outs[outs.length - 1].after(m);
+          return m;
+        }
+        function grow() {
+          msg.style.height = "auto";
+          msg.style.height = msg.scrollHeight + "px";
+        }
+        msg.addEventListener("input", function () {
+          grow();
+          send.disabled = !msg.value.trim();
+        });
+        msg.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" && !e.shiftKey && !e.isComposing) {
+            e.preventDefault();
+            form.requestSubmit();
+          }
+        });
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          var text = msg.value.trim();
+          if (!text) return;
+          // Group with the previous text if it was also the visitor's
+          var last = log.lastElementChild;
+          if (last && last.classList.contains("meta")) last.remove();
+          var prev = log.lastElementChild;
+          if (prev && prev.classList.contains("out")) prev.classList.remove("last");
+          bubble("out last", text);
+          thread.push({ role: "user", content: text });
+          msg.value = "";
+          grow();
+          send.disabled = true;
+          setMeta("Delivered");
+          scrollEnd();
+          if (!busy) ask();
+        });
+        function ask() {
+          busy = true;
+          var typingDots,
+            sentAt = Date.now();
+          // Let "Delivered" sit for a beat before the dots appear
+          var dotsTimer = setTimeout(function () {
+            setMeta("Read " + fmt.format(new Date()));
+            typingDots = document.createElement("div");
+            typingDots.className = "b in typing show on";
+            typingDots.innerHTML = "<i></i><i></i><i></i>";
+            log.appendChild(typingDots);
+            scrollEnd();
+          }, still ? 0 : 700);
+          var asked = thread.length;
+          var payload = { messages: thread.slice(-12) };
+          console.groupCollapsed("[chat] POST /api/chat");
+          console.log("page:", location.href);
+          console.log("request:", payload);
+          console.groupEnd();
+          if (location.protocol === "file:")
+            console.warn(
+              "[chat] page is opened as a file, so /api/chat doesn't exist. Run `npm run dev` and open http://localhost:3000",
+            );
+          fetch("/api/chat", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          })
+            .then(function (r) {
+              // Read as text first so non-JSON responses (404 pages, etc.) are visible
+              return r.text().then(function (raw) {
+                var d = null;
+                try {
+                  d = JSON.parse(raw);
+                } catch (e) {}
+                console.log(
+                  "[chat] response:",
+                  r.status,
+                  r.headers.get("content-type"),
+                  "in " + (Date.now() - sentAt) + "ms",
+                  d || raw.slice(0, 300),
+                );
+                if (!d)
+                  throw new Error(
+                    "response wasn't JSON (HTTP " + r.status + "). /api/chat isn't running here — start it with `npm run dev` and open http://localhost:3000",
+                  );
+                if (r.status === 429) {
+                  var e = new Error("rate limited, retry in " + d.retryAfter + "s");
+                  e.limit = d;
+                  throw e;
+                }
+                if (!r.ok || !d.reply) throw new Error(d.error || "HTTP " + r.status);
+                return d.reply;
+              });
+            })
+            .then(function (reply) {
+              var lines = reply
+                .split(/\n+/)
+                .map(function (l) { return l.trim(); })
+                .filter(Boolean)
+                .slice(0, 4);
+              // Slot the reply right after the texts it answers
+              thread.splice(asked, 0, { role: "assistant", content: lines.join("\n") });
+              // Dots appear 700ms after sending, then type for as long as the first line needs
+              var wait = Math.max(0, (still ? 0 : 700) + typeTime(lines[0]) - (Date.now() - sentAt));
+              setTimeout(function () {
+                clearTimeout(dotsTimer);
+                if (!typingDots) setMeta("Read " + fmt.format(new Date()));
+                (function next(i) {
+                  if (typingDots) typingDots.remove();
+                  var isLast = i === lines.length - 1,
+                    webs = linkParts(lines[i]).filter(function (p) { return p.web; }),
+                    alone = webs.length === 1 && lines[i].replace(/[.,!?;:\s]+$/, "").trim() === webs[0].text;
+                  // A line that's only a link becomes just the card, like iMessage
+                  if (!alone) bubble("in" + (isLast && !webs.length ? " last" : ""), lines[i]);
+                  webs.slice(0, 2).forEach(function (p, j, all) {
+                    var c = linkCard("in" + (isLast && j === all.length - 1 ? " last" : ""), p.href);
+                    if (!c) return;
+                    log.appendChild(c);
+                    requestAnimationFrame(function () { c.classList.add("on"); });
+                  });
+                  scrollEnd();
+                  if (i + 1 >= lines.length) return done();
+                  // Type out each following line like separate texts
+                  typingDots = document.createElement("div");
+                  typingDots.className = "b in typing show on";
+                  typingDots.innerHTML = "<i></i><i></i><i></i>";
+                  log.appendChild(typingDots);
+                  setTimeout(function () {
+                    next(i + 1);
+                  }, typeTime(lines[i + 1]));
+                })(0);
+              }, wait);
+            })
+            .catch(function (err) {
+              console.error("[chat] not delivered:", err.message, err);
+              clearTimeout(dotsTimer);
+              if (typingDots) typingDots.remove();
+              if (err.limit) {
+                // Rate limited: adi says so instead of "Not Delivered". Unanswered texts stay
+                // in the thread and go out with the visitor's next message.
+                var mins = Math.max(1, Math.ceil((err.limit.retryAfter || 60) / 60)),
+                  wait = mins < 60 ? mins + " min" + (mins === 1 ? "" : "s") : Math.ceil(mins / 60) + " hr" + (mins < 120 ? "" : "s");
+                bubble(
+                  "in last",
+                  err.limit.scope === "global"
+                    ? "i'm out of replies for today, email me at adi@apanda.dev"
+                    : "you're texting faster than i can reply, try again in " + wait,
+                );
+                setMeta("");
+                scrollEnd();
+                busy = false;
+                return;
+              }
+              // Unanswered texts stay in the thread, so Try Again resends them
+              var m = setMeta("Not Delivered", true);
+              var retry = document.createElement("button");
+              retry.type = "button";
+              retry.textContent = "Try Again";
+              retry.onclick = function () {
+                setMeta("Delivered");
+                ask();
+              };
+              m.appendChild(retry);
+              busy = false;
+            });
+          function done() {
+            busy = false;
+            // Visitor texted again while the reply was coming in
+            if (thread.length > asked + 1) ask();
+          }
+        }
+
+        // GamePanda: the + button opens the iMessage app drawer. Game cards post
+        // into the thread, and results go to adi's AI so it can react.
+        // adi "sends" a card from an app: typing dots, then the card as a gray bubble
+        function adiSends(app) {
+          var dots = document.createElement("div");
+          dots.className = "b in typing show on";
+          dots.innerHTML = "<i></i><i></i><i></i>";
+          log.appendChild(dots);
+          scrollEnd();
+          var minWait = new Promise(function (res) { setTimeout(res, typeTime(app.name + " card")); });
+          Promise.all([app.card(), minWait])
+            .then(function (r) {
+              var card = r[0].el;
+              dots.replaceWith(card);
+              card.classList.add("show", "last");
+              var prev = card.previousElementSibling;
+              if (prev && prev.classList.contains("in")) prev.classList.remove("last");
+              requestAnimationFrame(function () {
+                card.classList.add("on");
+              });
+              thread.push({ role: "assistant", content: r[0].note });
+              scrollEnd();
+            })
+            .catch(function (err) {
+              console.error("[apps] " + app.id + " failed:", err);
+              dots.remove();
+              bubble("in last", "couldn't load that rn, try again in a bit");
+              scrollEnd();
+            });
+        }
+
+        if (window.GamePanda)
+          GamePanda.init({
+            button: document.getElementById("plus"),
+            apps: (window.ChatApps || []).map(function (app) {
+              return { name: app.name, sub: app.sub, icon: app.icon, run: function () { adiSends(app); } };
+            }),
+            onSend: function (card) {
+              var last = log.lastElementChild;
+              if (last && last.classList.contains("meta")) last.remove();
+              var prev = log.lastElementChild;
+              if (prev && prev.classList.contains("out")) prev.classList.remove("last");
+              card.classList.add("show", "last");
+              log.appendChild(card);
+              requestAnimationFrame(function () {
+                card.classList.add("on");
+              });
+              setMeta("Delivered");
+              scrollEnd();
+            },
+            onResult: function (r) {
+              var winner = { win: "the visitor won, adi lost", lose: "adi won, the visitor lost", draw: "it was a draw" }[r.outcome];
+              thread.push({
+                role: "user",
+                content: "[gamepanda] game over: " + r.title.toLowerCase() + ". " + winner + ". (from the visitor's screen: " + r.summary + ")",
+              });
+              if (!busy) ask();
+            },
+          });
+
+        // iMessage's received-message sound for each incoming intro bubble.
+        // Browsers block audio until the visitor interacts with the page, so the first
+        // bubbles may be silent; once they click, tap or press a key, the rest play.
+        var ding = (function () {
+          var AC = window.AudioContext || window.webkitAudioContext;
+          var ctx = AC ? new AC() : null,
+            buf = null;
+          function unlock() {
+            if (ctx) ctx.resume();
+            ["pointerdown", "keydown", "touchstart"].forEach(function (e) {
+              removeEventListener(e, unlock, true);
+            });
+          }
+          if (ctx && ctx.state !== "running")
+            ["pointerdown", "keydown", "touchstart"].forEach(function (e) {
+              addEventListener(e, unlock, true);
+            });
+          if (!ctx) return function () {};
+          fetch("imessage-received.m4a")
+            .then(function (r) { return r.arrayBuffer(); })
+            .then(function (a) {
+              return new Promise(function (res, rej) { ctx.decodeAudioData(a, res, rej); });
+            })
+            .then(function (b) { buf = b; })
+            .catch(function (err) { console.warn("[sound] couldn't load the message sound:", err); });
+          return function () {
+            if (!buf) return;
+            if (ctx.state !== "running") return void ctx.resume();
+            var src = ctx.createBufferSource(),
+              gain = ctx.createGain();
+            gain.gain.value = 0.6;
+            src.buffer = buf;
+            src.connect(gain).connect(ctx.destination);
+            src.start();
+          };
+        })();
+
+        // Play the incoming bubbles like a conversation: typing dots, then the message.
+        function reveal(b) {
+          // With reduced motion every bubble shows at once, so ding once instead of nine times
+          if (!still || b === bubbles[0]) ding();
+          b.classList.add("show");
+          requestAnimationFrame(function () {
+            requestAnimationFrame(function () {
+              b.classList.add("on");
+            });
+          });
+        }
+        function typing() {
+          var t = document.createElement("div");
+          t.className = "b in typing show on ghost";
+          t.innerHTML = "<i></i><i></i><i></i>";
+          return t;
+        }
+        function play(i) {
+          if (i >= bubbles.length) {
+            var rd = document.getElementById("read");
+            rd.textContent = "Read " + fmt.format(new Date());
+            setTimeout(
+              function () {
+                rd.classList.add("on");
+                form.classList.add("on");
+              },
+              still ? 0 : 500,
+            );
+            return;
+          }
+          var b = bubbles[i];
+          if (still || i === 0) {
+            reveal(b);
+            return setTimeout(
+              function () {
+                play(i + 1);
+              },
+              still ? 0 : 350,
+            );
+          }
+          var t = typing();
+          t.style.top = b.offsetTop + "px";
+          t.style.left = b.offsetLeft + "px";
+          chat.appendChild(t);
+          setTimeout(
+            function () {
+              t.remove();
+              reveal(b);
+              setTimeout(function () {
+                play(i + 1);
+              }, 250);
+            },
+            typeTime(b.textContent),
+          );
+        }
+        setTimeout(
+          function () {
+            play(0);
+          },
+          still ? 0 : 300,
+        );
+      })();
+    </script>
+  </body>
+</html>

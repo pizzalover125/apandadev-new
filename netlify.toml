@@ -1,0 +1,15 @@
+# Only the site files are published (copied into dist/), so .env and the source
+# for the API never end up public. The API runs as Netlify Functions.
+[build]
+  command = "rm -rf dist && mkdir dist && cp index.html gamepanda.js apps.js phoenix-map.png imessage-received.m4a dist/"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
